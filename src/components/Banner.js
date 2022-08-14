@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from '../styles/Banner.module.css';
 import logo from "../images/logo.png";
-import {useEffect,useState} from 'react';
+import {useEffect,useState,createContext} from 'react';
 import Link from '../components/Link';
 import HoverContent from '../components/HoverContent';
+import NavMobile from './NavMobile';
+
 function Banner() {
     const bannerWidth={
         height:'80px',
@@ -21,8 +23,16 @@ function Banner() {
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
+
+      const [toggle,setToggle]=useState(false);
   return (
+    <>
     <div style={scrollY>300?bannerWidth:{}} className={styles.Container}>
+          <div onClick={()=>setToggle(pre=>!pre)} className={styles.toggle}>
+            <div className={`${styles.line}`}></div>
+            <div className={`${styles.line}`}></div>
+            <div className={`${styles.line}`}></div>
+          </div>
           <div className={styles.Logo}>
             <img style={scrollY>300?{width:"150px"}:{width:"250px"}} className={styles.Img} src={logo} alt="" />
           </div>
@@ -36,6 +46,8 @@ function Banner() {
              </Link>
           </div>
     </div>
+    <NavMobile action={toggle}/>
+    </>
   )
 }
 

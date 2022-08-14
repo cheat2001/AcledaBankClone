@@ -3,7 +3,6 @@ import styles from "../styles/Link.module.css";
 import {useState} from "react";
 function Link({title,children}) {
     const [action,setAction]=useState(false);
-    console.log(action);
     
   return (
     <div onMouseLeave={()=>setAction(false)} onMouseOver={()=>setAction(true)} className={styles.Container}>
