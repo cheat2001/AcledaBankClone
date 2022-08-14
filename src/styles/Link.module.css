@@ -1,0 +1,17 @@
+.Container{
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.Container a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    padding: 10px 30px;
+
+}
+a:hover{
+    background-color: #0e1c2e;
+}
