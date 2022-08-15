@@ -3,13 +3,18 @@ import styles from '../styles/NavMobile.module.css';
 import { XIcon,FlagIcon,GlobeAltIcon,SearchIcon,ChartBarIcon,DownloadIcon ,InformationCircleIcon,LibraryIcon,ChevronDownIcon,ChevronUpIcon,UserIcon,OfficeBuildingIcon,CreditCardIcon,FingerPrintIcon} from '@heroicons/react/solid'
 function NavMobile({action}) {
     const [toggle,setToggle]=useState(action);
+
     useEffect(()=>{
       setToggle(pre=>!pre);
     },[action]);
 
     useEffect(() => {
         function handleResize() {
-         setToggle(false);   
+         if(window.innerWidth>850){
+          setToggle(false);  
+         }
+         console.log(window.innerWidth);
+         
     }
         window.addEventListener('resize', handleResize)
       })

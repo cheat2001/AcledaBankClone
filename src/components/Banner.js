@@ -14,7 +14,6 @@ function Banner() {
     const [scrollY,setScrollY]=useState(0);
     useEffect(() => {
         const handleScroll = event => {
-          console.log('window.scrollY', window.scrollY);
           setScrollY(window.scrollY);        };
     
         window.addEventListener('scroll', handleScroll);

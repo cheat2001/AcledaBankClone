@@ -13,9 +13,14 @@ background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 min-height: 250px;
+max-height: 400px;
+object-fit: contain;
 }
 @media (max-width:850px) {
   .Container{
     top: 130px;
   }    
+  .Container img{
+    object-fit: cover;
+  }
 }
