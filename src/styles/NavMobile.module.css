@@ -5,6 +5,7 @@
     position: fixed;
     left: -100vw;
     transition: 0.35s ease-in-out;
+    z-index: 1000;
 }
 .Navbar .Top{
     width: 100%;
