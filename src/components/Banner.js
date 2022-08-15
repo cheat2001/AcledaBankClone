@@ -23,7 +23,7 @@ function Banner() {
         };
       }, []);
 
-      const [toggle,setToggle]=useState(false);
+      const [toggle,setToggle]=useState(true);
   return (
     <>
     <div style={scrollY>300?bannerWidth:{}} className={styles.Container}>

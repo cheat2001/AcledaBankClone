@@ -11,7 +11,7 @@ import slide5 from "../images/slide5.jpg";
 import slide6 from "../images/slide6.jpg";
 import slide7 from "../images/slide7.jpg";
 function Sliding() {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

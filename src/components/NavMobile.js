@@ -13,7 +13,7 @@ function NavMobile({action}) {
          if(window.innerWidth>850){
           setToggle(false);  
          }
-         console.log(window.innerWidth);
+     
          
     }
         window.addEventListener('resize', handleResize)

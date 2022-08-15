@@ -1,0 +1,16 @@
+.Container{
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+    overflow: hidden;
+    background-color: #1B3351;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.Container img{
+    width: 200px;
+}
