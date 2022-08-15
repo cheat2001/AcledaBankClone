@@ -1,0 +1,33 @@
+.Container{
+    width: 100%;
+    height: 350px;
+    background-color: #1B3351;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 70px;
+    gap: 20px;
+}
+.Container .Section1, .Section2, .Section3, .Section4{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Container a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.Container a:hover{
+    text-decoration: underline;
+}
+.Container .Section4 img{
+    width: 30px;
+    border-radius: 50%;
+}
+.Container img:hover{
+    border: 2px solid white;
+}

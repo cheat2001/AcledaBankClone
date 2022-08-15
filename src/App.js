@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import Banner from './components/Banner'
 import "./App.css";
 import Navbar from './components/Navbar';
-import Sliding from './components/Sliding';
 import AcOverlay from './components/AcOverlay';
+import Home from './pages/Home';
+import Footer from './components/Footer';
+
+
 function App() {
   const [action,setAction] =useState(true);
   setTimeout(() => {
@@ -14,8 +17,9 @@ function App() {
        
       <Banner/>
       <Navbar/>
-      <Sliding/>
       {action&&<AcOverlay/>}
+      <Home/>
+      <Footer/>
     </div>
   )
 }

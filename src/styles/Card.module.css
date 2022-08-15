@@ -1,0 +1,33 @@
+.Container{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.Container img{
+    width: 100%;
+}
+.Container .Btn{
+    margin-top: 20px;
+}
+@media (max-width:850px) {
+    .Container{
+        width: 300px;
+    }
+}
+@media (max-width:730px) {
+    .Container{
+        width: 250px;
+    }
+}
+@media (max-width:630px) {
+    .Container{
+        width: 200px;
+    }
+}
+@media (max-width:500px) {
+    .Container{
+        width: 350px;
+    }
+}

@@ -1,0 +1,17 @@
+.Home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Home .CardBlock{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 100px;
+}
+@media (max-width:500px) {
+    .Home .CardBlock{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

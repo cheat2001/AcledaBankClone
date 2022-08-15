@@ -1,0 +1,33 @@
+.Container{
+    width: 100%;
+    height: 200px;
+    background-color: #122133;
+    margin-top: 190px;
+    border-top: 1px solid #CEA939;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    place-content: center;
+    text-align: center;
+    place-items: center;
+}
+.Container a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.Container a:hover{
+    background-color: #122133;
+}
+.Container a:hover p{
+   text-decoration: underline;
+}
+@media (max-width:850px) {
+    .Container{
+        margin-top: 130px;
+        height:300px ;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+}
