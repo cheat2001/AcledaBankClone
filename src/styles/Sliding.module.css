@@ -1,0 +1,21 @@
+
+.Container{
+    position: relative;
+    top: 190px;
+    width: 100%;
+    padding: 40px;
+    background: #1B3351;
+    border-top: 1px solid #CEA939;
+}
+.Container img{
+width: 100%;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 250px;
+}
+@media (max-width:850px) {
+  .Container{
+    top: 130px;
+  }    
+}
